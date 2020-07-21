@@ -14,7 +14,7 @@ const minecraftAgent = {
     name: 'Minecraft',
     version: 1
 }
-const authpath = 'https://authserver.mojang.com'
+const authpath = 'https://auth.terebros.fr/api/yggdrasil'
 const statuses = [
     {
         service: 'sessionserver.mojang.com',
