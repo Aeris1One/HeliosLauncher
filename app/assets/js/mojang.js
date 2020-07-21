@@ -144,7 +144,7 @@ exports.authenticate = function(username, password, clientToken, requestUser = t
             body.clientToken = clientToken
         }
 
-        request.post(authpath + '/authenticate',
+        request.post(authpath + '/authserver/authenticate',
             {
                 json: true,
                 body
@@ -175,7 +175,7 @@ exports.authenticate = function(username, password, clientToken, requestUser = t
  */
 exports.validate = function(accessToken, clientToken){
     return new Promise((resolve, reject) => {
-        request.post(authpath + '/validate',
+        request.post(authpath + '/authserver/validate',
             {
                 json: true,
                 body: {
@@ -210,7 +210,7 @@ exports.validate = function(accessToken, clientToken){
  */
 exports.invalidate = function(accessToken, clientToken){
     return new Promise((resolve, reject) => {
-        request.post(authpath + '/invalidate',
+        request.post(authpath + '/authserver/invalidate',
             {
                 json: true,
                 body: {
@@ -246,7 +246,7 @@ exports.invalidate = function(accessToken, clientToken){
  */
 exports.refresh = function(accessToken, clientToken, requestUser = true){
     return new Promise((resolve, reject) => {
-        request.post(authpath + '/refresh',
+        request.post(authpath + '/authserver/refresh',
             {
                 json: true,
                 body: {
