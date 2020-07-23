@@ -2,7 +2,7 @@
 
 <h1 align="center">Terebros Launcher</h1>
 
-[<p align="center"><img src="https://img.shields.io/travis/Aeris1One/TerebrosLauncher.svg?style=for-the-badge" alt="travis">](https://travis-ci.org/Terebros-MC/HeliosLauncher) [<img src="https://img.shields.io/github/downloads/Terebros-MC/TerebrosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/Terebros-MC/HeliosLauncher/releases)</p>
+[<p align="center"><img src="https://img.shields.io/travis/Terebros-MC/TerebrosLauncher.svg?style=for-the-badge" alt="travis">](https://travis-ci.org/Terebros-MC/HeliosLauncher) [<img src="https://img.shields.io/github/downloads/Terebros-MC/HeliosLauncher/total.svg?style=for-the-badge" alt="downloads">](https://github.com/Terebros-MC/HeliosLauncher/releases)</p>
 
 <p align="center">Rejoignez Terebros sans vous soucier de Java, Forge ou même des mods.</p>
 
