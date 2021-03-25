@@ -53,6 +53,7 @@ Si vous téléchargez depuis [Github Releases](https://github.com/Aeris1One/Tere
 | macOS | `terebroslauncher-VERSION.dmg` |
 | Linux x64 | `terebroslauncher-VERSION-x86_64.AppImage` |
 
+
 ## Console
 
 Pour ouvrir la console, utilisez la combinaison suivante :
@@ -72,11 +73,17 @@ Si vous voulez exporter le contenu de la console, il suffit de faire clic droit 
 
 ## Developpement
 
+<<<<<<< HEAD
 ### Démarrer
+=======
+This section details the setup of a basic developmentment environment.
+
+### Getting Started
+>>>>>>> 48d0c9e5490ad67f58aa88d2920bab9d3af46128
 
 **Dépendances**
 
-* [Node.js][nodejs] v12
+* [Node.js][nodejs] v14
 
 ---
 
@@ -114,7 +121,87 @@ Pour un autre système.
 | macOS       | `npm run dist:mac`   |
 | Linux x64   | `npm run dist:linux` |
 
+<<<<<<< HEAD
 Vous ne pouvez pas construire les installeurs pour MacOS sur Windows et Linux et ne pouvez pas créer d'installateurs pour Windows et Linux depuis MacOS
+=======
+Builds for macOS may not work on Windows/Linux and vice-versa.
+
+---
+
+### Visual Studio Code
+
+All development of the launcher should be done using [Visual Studio Code][vscode].
+
+Paste the following into `.vscode/launch.json`
+
+```JSON
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Main Process",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/node_modules/electron/cli.js",
+      "args" : ["."],
+      "outputCapture": "std"
+    },
+    {
+      "name": "Debug Renderer Process",
+      "type": "chrome",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+      "windows": {
+        "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+      },
+      "runtimeArgs": [
+        "${workspaceFolder}/.",
+        "--remote-debugging-port=9222"
+      ],
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
+```
+
+This adds two debug configurations.
+
+#### Debug Main Process
+
+This allows you to debug Electron's [main process][mainprocess]. You can debug scripts in the [renderer process][rendererprocess] by opening the DevTools Window.
+
+#### Debug Renderer Process
+
+This allows you to debug Electron's [renderer process][rendererprocess]. This requires you to install the [Debugger for Chrome][chromedebugger] extension.
+
+Note that you **cannot** open the DevTools window while using this debug configuration. Chromium only allows one debugger, opening another will crash the program.
+
+---
+
+### Note on Third-Party Usage
+
+You may use this software in your own project so long as the following conditions are met.
+
+* Credit is expressly given to the original authors (Daniel Scalzi).
+  * Include a link to the original source on the launcher's About page.
+  * Credit the authors and provide a link to the original source in any publications or download pages.
+* The source code remain **public** as a fork of this repository.
+
+We reserve the right to update these conditions at any time, please check back periodically.
+
+---
+
+## Resources
+
+* [Wiki][wiki]
+* [Nebula (Create Distribution.json)][nebula]
+* [v2 Rewrite Branch (WIP)][v2branch]
+
+The best way to contact the developers is on Discord.
+
+[![discord](https://discordapp.com/api/guilds/211524927831015424/embed.png?style=banner3)][discord]
+>>>>>>> 48d0c9e5490ad67f58aa88d2920bab9d3af46128
 
 ---
 
