@@ -115,7 +115,9 @@ Pour un autre système.
 | macOS       | `npm run dist:mac`   |
 | Linux x64   | `npm run dist:linux` |
 
+
 Vous ne pouvez pas construire les installeurs pour MacOS sur Windows et Linux et ne pouvez pas créer d'installateurs pour Windows et Linux depuis MacOS
+
 
 
 ### À plus en jeu ;)
