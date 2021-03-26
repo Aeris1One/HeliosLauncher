@@ -18,10 +18,10 @@ function getCurrentPlatform(){
 builder.build({
     targets: (process.argv[2] != null && Platform[process.argv[2]] != null ? Platform[process.argv[2]] : getCurrentPlatform()).createTarget(),
     config: {
-        appId: 'terebroslauncher',
-        productName: 'Terebros Launcher',
+        appId: 'AerisLauncher',
+        productName: 'Aeris Launcher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2020 Terebros',
+        copyright: 'Copyright © 2018-2021 Aeris',
         directories: {
             buildResources: 'build',
             output: 'dist'
@@ -47,9 +47,9 @@ builder.build({
         linux: {
             target: 'AppImage',
             maintainer: 'Aeris One',
-            vendor: 'Terebros',
-            synopsis: 'Launcher pour Terebros',
-            description: 'Launcher permettant de lancer Terebros avec gestion automatique des mises à jour.',
+            vendor: 'AerisLauncher',
+            synopsis: 'Launcher par Aeris',
+            description: 'Launcher revisité par Aeris avec gestion automatique des mises à jour.',
             category: 'Game'
         },
         compression: 'maximum',

@@ -129,7 +129,7 @@ function updateSelectedAccount(authUser){
         if(authUser.displayName != null){
             username = authUser.displayName
         }
-        document.getElementById('avatarContainer').style.backgroundImage = `url('https://auth.terebros.fr/avatar/player/${authUser.displayName}')`
+        document.getElementById('avatarContainer').style.backgroundImage = `url('https://auth.mc.aeris-one.fr/avatar/player/${authUser.displayName}')`
     }
     user_text.innerHTML = username
 }

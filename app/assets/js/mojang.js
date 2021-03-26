@@ -15,7 +15,7 @@ const minecraftAgent = {
     version: 1
 }
 
-const authpath = 'https://auth.terebros.fr/api/yggdrasil'
+const authpath = 'https://auth.mc.aeris-one.fr/api/yggdrasil'
 const statuses = [
     {
         service: 'session.minecraft.net',

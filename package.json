@@ -1,13 +1,13 @@
 {
-  "name": "terebroslauncher",
+  "name": "AerisLauncher",
   "version": "1.7.3",
-  "productName": "Terebros Launcher",
-  "description": "Launcher Minecraft pour Terebros",
-  "author": "Terebros (https://github.com/Terebros-MC/)",
+  "productName": "Aeris Launcher",
+  "description": "Launcher Minecraft par Aeris",
+  "author": "Aeris1One (https://github.com/Aeris1One/)",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/Terebros-MC/HeliosLauncher",
+  "homepage": "https://github.com/Aeris1One/HeliosLauncher",
   "bugs": {
-    "url": "https://github.com/Terebros-MC/HeliosLauncher/issues"
+    "url": "https://github.com/Aeris1One/HeliosLauncher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Terebros-MC/HeliosLauncher.git"
+    "url": "git+https://github.com/Aeris1One/HeliosLauncher.git"
   }
 }
